@@ -1,0 +1,37 @@
+﻿@page
+@model Proiect_Bota_Rodica.Pages.Distribuitori.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Distribuitor</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Distribuitor.NumeDistribuitor)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Distribuitor.NumeDistribuitor)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Distribuitor.Telefon)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Distribuitor.Telefon)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Distribuitor.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Distribuitor.Email)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Distribuitor?.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
